@@ -34,6 +34,7 @@ nav ul {
 #contact {
     padding-inline: 100px;
     padding-block: 100px;
+    border-bottom: 1px solid #eaa198;
 }
 body {
     max-width: 1920px;
@@ -90,15 +91,16 @@ nav a {
 }
 #about,
 #contact {
-    background-color: #f6d2b8;
+    background-color: #0a0c0c;
     width: 100%;
+    color: 	#eaa198;
 }
 .picture.left::before {
-    background-color: #e5975f;
+    background-color: 	#eaa198;
     left: 0;
 }
 .picture.right::before {
-    background-color: #beb45a;
+    background-color: #eaa198;
     right: 0;
 }
 .picture {
@@ -133,11 +135,16 @@ nav a {
     font-style: italic;
     width: 60%;
 }
+#gallery {
+    background-color: 	#0a0c0c;
+    border-bottom: 1px solid #eaa198;
+}
 #gallery,
 .gallery-item,
 .item-column img {
     width: 100%;
     height: 100%;
+    
 }
 #about-me p {
     width: 80%;
@@ -146,6 +153,7 @@ nav a {
 .title {
     text-align: center;
     padding-block: 2em;
+    color:#eaa198
 }
 .gallery .nav {
     justify-content: center;
@@ -154,17 +162,17 @@ nav a {
 .nav-pills .nav-link:hover,
 .nav-pills .show > .nav-link {
     color: #000;
-    background-color: #beb45a;
+    background-color: #eaa198;
     border-radius: 0;
 }
 .nav-link.active-tag {
-    background-color: #beb45a !important;
+    background-color: #eaa198 !important;
     color: #000 !important;
 }
 .nav-link,
 .nav-pills {
     cursor: pointer;
-    color: #000;
+    color: #eaa198;
     transition: background-color 0.3s, color 0.3s;
 }
 .item-column {
@@ -245,18 +253,20 @@ form {
 .quote__text {
     font-style: italic;
     font-weight: 300;
+    color:#eaa198;
 }
 .quote__author {
     font-weight: 800;
     font-size: 22px;
+    color:#eaa198;
 }
 #services {
     margin: auto;
-    background-color: #a8d5d8;
+    background-color: #0a0c0c;
 }
 #services .container::before {
     content: " ";
-    background-color: #1c6474;
+    background-color: #eaa198;
     position: absolute;
     width: 100%;
     height: 30%;
@@ -269,19 +279,30 @@ form {
     display: flex;
     padding: 2em 0;
 }
+.service p {
+    margin-bottom:0.6em;
+    font-size:15px;
+}
+.service li{
+    font-size: 14px;
+}
+.service h3{
+    font-size:24px;
+}
 .service {
-    background-color: #fff;
+    background-color: #0a0c0c;
     max-width: 390px;
     width: 30%;
-    height: 337px;
-    padding: 1em;
+    padding: 0.5em;
     flex-direction: column;
     justify-content: space-between;
     z-index: 1;
+    border:5px solid #eaa198;
+    color:#eaa198;
 }
 #contact {
     margin: auto;
-    background-color: #d8d3a8;
+    background-color: #0a0c0c;
 }
 form {
     flex-direction: column;
@@ -290,24 +311,25 @@ form {
 }
 .form-group input {
     height: 2.5em;
-   
+    border: 1px solid #eaa198;
 }
 form textarea {
     height: 5em;
     line-height: 2.5em;
     font-size: 1.2em;
+    border: 1px solid #eaa198;
 }
 button[type="submit"] {
-    background-color: #beb45a;
+    background-color: #eaa198;
     padding: 0.5em 8.3em;
     color: #000;
-    border: 1px solid black;
+    border: 1px solid #eaa198;
     
 }
 button[type="submit"]:hover {
-    background-color: #8d8644;
+    background-color: #eaa298a4;
     color: #000;
-    border: 1px solid black;
+    border: 2px solid #eaa198;
 }
 .form-group{
     display: flex;
@@ -395,7 +417,7 @@ nav ul li:last-child {
         margin-bottom: 1em;
     }
     #services .container::before {
-        width: 30%;
+        width: 20%;
         height: 100%;
         bottom: 0;
         right: 0;
@@ -419,6 +441,9 @@ nav ul li:last-child {
     .top-header .nav ul {
         width: 100%;
         padding: 0;
+    }
+    nav li {
+        padding-inline: 5px;
     }
     .top-header .nav li {
         flex: 1;
