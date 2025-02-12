@@ -203,6 +203,7 @@ nav a {
     top: 50%;
     background: #fff;
 }
+
 form input,
 form textarea {
     width: 100%;
@@ -303,40 +304,48 @@ form {
 #contact {
     margin: auto;
     background-color: #0a0c0c;
+    padding: 2em; /* Add padding for better spacing */
 }
+
 form {
     flex-direction: column;
-    width: 70%;
+    width: 100%; /* Make it full width */
+    max-width: 600px; /* Set a maximum width for larger screens */
     align-items: flex-start;
 }
-.form-group input {
-    height: 2.5em;
-    border: 1px solid #eaa198;
-}
-form textarea {
-    height: 5em;
-    line-height: 2.5em;
-    font-size: 1.2em;
-    border: 1px solid #eaa198;
-}
-button[type="submit"] {
-    background-color: #eaa198;
-    padding: 0.5em 8.3em;
-    color: #000;
-    border: 1px solid #eaa198;
-    
-}
-button[type="submit"]:hover {
-    background-color: #eaa298a4;
-    color: #000;
-    border: 2px solid #eaa198;
-}
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
+    width: 70%; /* Full width for each form group */
+    margin-bottom: 1em; /* Space between form groups */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width */
+    padding: 0.5em; /* Padding for inputs */
+    border: 1px solid #eaa198; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #eaa198; /* Background color */
+    color: #000; /* Text color */
+}
+
+button[type="submit"] {
+    background-color: #eaa198; /* Button background color */
+    padding: 0.5em 5em; /* Padding for button */
+    color: #000; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+    background-color: #d89a7a; /* Change color on hover */
 }
 #nom, #email, #message{
-    width: 150%;
+    width: 100%;
 }
 nav ul li:last-child {
     display: flex;
